@@ -15,6 +15,7 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  imports = [ ./modules/default.nix ];
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -27,6 +28,7 @@
     neofetch
     ranger
     fzf
+    tree
     bat
     btop
     thunderbird
@@ -41,21 +43,6 @@
     pciutils # lspci
     usbutils # lsusb
   ];
-
-  programs.git = {
-    enable = true;
-    userName = "junkim100";
-    userEmail = "junkim100@gmail.com";
-  };
-
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscode;
-    extensions = with pkgs.vscode-extensions; [
-      # Add your desired extensions here
-    ];
-  };
-
   
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
