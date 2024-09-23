@@ -11,6 +11,7 @@
       size = 16;
     };
     settings = {
+      shell = "${pkgs.zsh}/bin/zsh";
       adjust_line_height = 0;
       adjust_column_width = -1;
       disable_ligatures = "never";
@@ -22,13 +23,13 @@
       url_style = "straight";
       open_url_with = "default";
       detect_urls = true;
-      copy_on_select = false;
+      copy_on_select = true;
       strip_trailing_spaces = "smart";
-      input_delay = 5;
+      input_delay = 3;
       sync_to_monitor = true;
       enable_audio_bell = false;
       visual_bell_duration = 0;
-      window_border_width = 0;
+      window_border_width = 1;
       draw_minimal_borders = true;
       window_margin_width = 0;
       single_window_margin_width = -1;
@@ -83,6 +84,5 @@
       "kitty_mod+v" = "paste_from_clipboard";
       "kitty_mod+c" = "copy_to_clipboard";
     };
-    shellIntegration.enableBashIntegration = true;
   };
 }

@@ -30,7 +30,6 @@
     ranger
     fzf
     tree
-    bat
     btop
     python310
 
