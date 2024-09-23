@@ -14,5 +14,6 @@
 	./git
         ./nvim
         ./zsh
+	./starship
     ];
 }
