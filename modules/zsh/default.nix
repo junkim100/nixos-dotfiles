@@ -9,8 +9,8 @@
     shellAliases = {
       ll = "ls -al";
       dotfiles = ''
-        if [ -d "$HOME/dotfiles" ]; then
-            cd $HOME/dotfiles
+        if [ -d "$HOME/nixos-dotfiles/" ]; then
+            cd $HOME/nixos-dotfiles/
         else
             echo "Can't find dotfiles directory"
         fi'';

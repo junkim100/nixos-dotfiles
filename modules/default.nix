@@ -12,7 +12,7 @@
 
         # cli
 	./git
-        #./nvim
+        ./nvim
         ./zsh
     ];
 }

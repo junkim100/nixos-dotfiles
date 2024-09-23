@@ -33,8 +33,6 @@
     btop
     thunderbird
     cider
-    vscode
-    kitty
 
     # system tools
     sysstat
