@@ -8,6 +8,7 @@
         # gui
         #./firefox
         ./Code
+	./zathura
 
         # cli
 	./git
