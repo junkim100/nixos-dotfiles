@@ -23,13 +23,13 @@
       url_style = "straight";
       open_url_with = "default";
       detect_urls = true;
-      copy_on_select = true;
+      copy_on_select = false;
       strip_trailing_spaces = "smart";
-      input_delay = 3;
+      input_delay = 5;
       sync_to_monitor = true;
       enable_audio_bell = false;
       visual_bell_duration = 0;
-      window_border_width = 1;
+      window_border_width = 0;
       draw_minimal_borders = true;
       window_margin_width = 0;
       single_window_margin_width = -1;
