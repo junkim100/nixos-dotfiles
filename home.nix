@@ -37,15 +37,21 @@
     # GUI
     thunderbird
     cider
+    gnome-tweaks
+    
+    # Wine
+    wine
+    winetricks
+    #wineWowPackages.waylandFull
 
-    # system tools
+    # System Tools
     sysstat
     lm_sensors # for `sensors` command
     ethtool
     pciutils # lspci
     usbutils # lsusb
   ];
-  
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {

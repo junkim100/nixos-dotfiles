@@ -42,6 +42,10 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Korean Input
+  i18n.inputMethod.enabled = "ibus";
+  i18n.inputMethod.ibus.engines = with pkgs.ibus-engines; [ hangul ];
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 

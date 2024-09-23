@@ -11,6 +11,7 @@
       size = 16;
     };
     settings = {
+      shell = "${pkgs.zsh}/bin/zsh";
       adjust_line_height = 0;
       adjust_column_width = -1;
       disable_ligatures = "never";
@@ -83,6 +84,5 @@
       "kitty_mod+v" = "paste_from_clipboard";
       "kitty_mod+c" = "copy_to_clipboard";
     };
-    shellIntegration.enableBashIntegration = true;
   };
 }

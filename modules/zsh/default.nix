@@ -8,6 +8,9 @@
     oh-my-zsh.enable = false;
     shellAliases = {
       ll = "ls -al";
+      # SSH using kitty
+      ssh = "kitty +kitten ssh";
+      # Faster navigation
       nixos = ''
       if [ -d "/etc/nixos/" ]; then
             cd /etc/nixos/
@@ -21,5 +24,12 @@
             echo "Can't find dotfiles directory"
         fi'';
     };
+    initExtra = ''
+      if command -v neofetch &> /dev/null; then
+        neofetch
+      else
+        echo "neofetch not found. Please install it to display system information."
+      fi
+    '';
   };
 }
