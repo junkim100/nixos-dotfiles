@@ -8,15 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.home-manager
     ];
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      junkim100 = import ./home.nix;
-    };
-  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -87,6 +79,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  programs.zsh.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.junkim100 = {
     isNormalUser = true;
@@ -95,6 +89,7 @@
     packages = with pkgs; [
     #  thunderbird
     ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.

@@ -24,17 +24,15 @@
       github.copilot-chat
 
       # General productivity
-      vscodevim.vim
       eamodio.gitlens
-      ms-vsliveshare.vsliveshare
       ms-vscode-remote.remote-ssh
 
       # Themes and icons
+      arcticicestudio.nord-visual-studio-code
       pkief.material-icon-theme
       zhuangtongfa.material-theme
 
       # Misc
-      ms-azuretools.vscode-docker
       redhat.vscode-yaml
       bbenoist.nix
     ];
@@ -44,6 +42,7 @@
       "python.linting.flake8Enabled" = true;
       "python.linting.pylintEnabled" = false;
       "jupyter.alwaysTrustNotebooks" = true;
+      "workbench.colorTheme" = "Nord";
     };
   };
 }

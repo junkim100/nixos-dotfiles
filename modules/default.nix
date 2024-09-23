@@ -3,13 +3,15 @@
 {
     home.stateVersion = "23.11";
     imports = [
+        ./kitty
+
         # gui
         #./firefox
-        ./vscode
+        ./Code
 
         # cli
 	./git
         #./nvim
-        #./zsh
+        ./zsh
     ];
 }
