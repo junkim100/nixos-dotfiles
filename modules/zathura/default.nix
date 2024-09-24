@@ -40,7 +40,9 @@
       recolor-lightcolor = "${color-palette.nord0}";
       recolor-darkcolor = "${color-palette.nord4}";
       adjust-open = "width";
-      # recolor = true;
+      recolor = true;
+      recolor-reverse-video = true;
+      recolor-keephue = true;
     };
   };
 }
