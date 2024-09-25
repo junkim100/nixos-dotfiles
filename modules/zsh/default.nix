@@ -12,11 +12,11 @@
       ssh = "kitty +kitten ssh";
       # Faster navigation
       nixos = ''
-      if [ -d "/etc/nixos/" ]; then
-            cd /etc/nixos/
-      else
-            echo "Can't find /etc/nixos/"
-      fi'';
+        if [ -d "/etc/nixos/" ]; then
+              cd /etc/nixos/
+        else
+              echo "Can't find /etc/nixos/"
+        fi'';
       dotfiles = ''
         if [ -d "$HOME/nixos-dotfiles/" ]; then
             cd $HOME/nixos-dotfiles/
@@ -26,10 +26,16 @@
     };
     initExtra = ''
       if command -v neofetch &> /dev/null; then
+        clear
         neofetch
       else
         echo "neofetch not found. Please install it to display system information."
       fi
+
+      # Function alias for nvim
+      nvim() {
+        sudo nix run github:junkim100/nixvim -- "$@"
+      }
     '';
   };
 }

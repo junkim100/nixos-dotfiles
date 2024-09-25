@@ -12,7 +12,6 @@
 
         # cli
 	./git
-        ./nvim
 	./bat
         ./zsh
 	./starship
