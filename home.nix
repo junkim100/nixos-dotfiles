@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "junkim100";
@@ -15,11 +17,11 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  imports = [ ./modules/default.nix ];
+  imports = [./modules/default.nix];
 
   nixpkgs.config = {
     allowUnfree = true;
-    allowUnfreePredicate = (_: true);
+    allowUnfreePredicate = _: true;
   };
 
   # The home.packages option allows you to install Nix packages into your
@@ -37,11 +39,15 @@
     thunderbird
     cider
     gnome-tweaks
-    
+
     # Wine
     wine
     winetricks
     #wineWowPackages.waylandFull
+
+    #Fonts
+    kime
+    noto-fonts-cjk
 
     # System Tools
     sysstat
