@@ -19,11 +19,6 @@
 
   imports = [./modules/default.nix];
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowUnfreePredicate = _: true;
-  };
-
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -57,6 +52,10 @@
     usbutils # lsusb
   ];
 
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -83,9 +82,6 @@
   #
   #  /etc/profiles/per-user/junkim100/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

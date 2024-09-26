@@ -74,16 +74,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -94,21 +85,15 @@
     isNormalUser = true;
     description = "Jun";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
     shell = pkgs.zsh;
   };
 
   # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     firefox
-    zsh
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     curl
     git
