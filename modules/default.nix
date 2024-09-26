@@ -1,19 +1,22 @@
-{ inputs, pkgs, config, ... }:
-
 {
-    home.stateVersion = "23.11";
-    imports = [
-        ./kitty
+  inputs,
+  pkgs,
+  config,
+  ...
+}: {
+  home.stateVersion = "23.11";
+  imports = [
+    ./kitty
 
-        # gui
-        #./firefox
-        ./Code
-	./zathura
+    # gui
+    #./firefox
+    ./Code
+    ./zathura
 
-        # cli
-	./git
-	./bat
-        ./zsh
-	./starship
-    ];
+    # cli
+    ./git
+    ./bat
+    ./zsh
+    ./starship
+  ];
 }

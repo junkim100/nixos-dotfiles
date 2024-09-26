@@ -44,6 +44,9 @@
     kime
     noto-fonts-cjk
 
+    # Themes
+    nordic
+
     # System Tools
     sysstat
     lm_sensors # for `sensors` command
