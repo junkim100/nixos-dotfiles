@@ -8,7 +8,7 @@
     package = pkgs.kitty;
     font = {
       name = "FiraCode Nerd Font";
-      size = 16;
+      size = 14;
     };
     settings = {
       shell = "${pkgs.zsh}/bin/zsh";
