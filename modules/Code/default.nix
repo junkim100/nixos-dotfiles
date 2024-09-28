@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;
@@ -26,6 +28,7 @@
       # General productivity
       eamodio.gitlens
       ms-vscode-remote.remote-ssh
+      vscodevim.vim
 
       # Themes and icons
       arcticicestudio.nord-visual-studio-code
@@ -43,7 +46,7 @@
       "python.linting.pylintEnabled" = false;
       "jupyter.alwaysTrustNotebooks" = true;
       "workbench.colorTheme" = "Nord";
+      #"vim.cursorStylePerMode.insert" = "line";
     };
   };
 }
-

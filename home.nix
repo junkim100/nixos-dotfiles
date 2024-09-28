@@ -34,6 +34,7 @@
     thunderbird
     cider
     gnome-tweaks
+    zoom-us
 
     # Wine
     wine
@@ -46,6 +47,8 @@
 
     # Themes
     nordic
+
+    logiops_0_2_3
 
     # System Tools
     sysstat

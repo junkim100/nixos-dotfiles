@@ -6,14 +6,13 @@
 }: {
   home.stateVersion = "23.11";
   imports = [
+    # GUI
     ./kitty
-
-    # gui
     #./firefox
     ./Code
     ./zathura
 
-    # cli
+    # CLI
     ./git
     ./bat
     ./zsh
