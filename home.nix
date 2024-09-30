@@ -48,8 +48,6 @@
     # Themes
     nordic
 
-    logiops_0_2_3
-
     # System Tools
     sysstat
     lm_sensors # for `sensors` command

@@ -8,7 +8,7 @@
   imports = [
     # GUI
     ./kitty
-    #./firefox
+    ./firefox
     ./Code
     ./zathura
 

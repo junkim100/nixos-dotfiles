@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  firefox-addons,
   ...
 }: let
   inherit (lib) concatStringsSep escapeShellArg mapAttrsToList;
@@ -39,16 +40,22 @@ in {
       id = 0;
       isDefault = true;
 
-      # Hide tab bar because we have tree style tabs
-      #userChrome = ''
-      #  #TabsToolbar {
-      #    visibility: collapse !important;
-      #  }
+      extensions = with firefox-addons.packages."x86_64-linux"; [
+        ublock-origin
+        tree-style-tab
+        darkreader
+      ];
 
-      #  #titlebar-buttonbox {
-      #    height: 32px !important;
-      #  }
-      #'';
+      # Hide tab bar because we have tree style tabs
+      userChrome = ''
+        #TabsToolbar {
+          visibility: collapse !important;
+        }
+
+        #titlebar-buttonbox {
+          height: 32px !important;
+        }
+      '';
 
       extraConfig = builtins.concatStringsSep "\n" [
         (builtins.readFile "${betterfox}/Securefox.js")
