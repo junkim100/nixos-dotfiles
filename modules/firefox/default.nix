@@ -82,7 +82,6 @@ in {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         # Why the fuck can my search window make bell sounds
         "accessibility.typeaheadfind.enablesound" = false;
-        # Why the fuck can my search window make bell sounds
         "general.autoScroll" = true;
 
         # Hardware acceleration
@@ -155,6 +154,70 @@ in {
         "dom.battery.enabled" = false; # you don't need to see my battery...
         "dom.private-attribution.submission.enabled" = false; # No PPA for me pls
       };
+
+      bookmarks = [
+        {
+          name = "Bookmarks Toolbar";
+          toolbar = true;
+
+          bookmarks = [
+            {
+              name = "Youtube";
+              tags = ["youtube"];
+              keyword = "youtube";
+              url = "https://youtube.com/";
+            }
+            {
+              name = "Perplexity";
+              tags = ["perplexity"];
+              keyword = "perplexity";
+              url = "https://www.perplexity.ai/";
+            }
+            {
+              name = "Scholar";
+              tags = ["scholar"];
+              keyword = "scholar";
+              url = "https://scholar.google.com/";
+            }
+            {
+              name = "HuggingFace";
+              tags = ["huggingface"];
+              keyword = "huggingface";
+              url = "https://huggingface.co/";
+            }
+            {
+              name = "Notion";
+              tags = ["notion"];
+              keyword = "notion";
+              url = "https://www.notion.so/";
+            }
+            {
+              name = "GPU Usage";
+              tags = ["gpu"];
+              keyword = "gpu";
+              url = "https://docs.google.com/spreadsheets/d/1VDGNriWffX2h9_7jpaOQ_qDebGwBl6ydn-lZFrMRmP8/edit?pli=1&gid=0#gid=0";
+            }
+            {
+              name = "NLP&AI NAS";
+              tags = ["nas"];
+              keyword = "nas";
+              url = "https://163.152.71.163:5001/#/signin";
+            }
+            {
+              name = "KU Portal";
+              tags = ["ku"];
+              keyword = "ku";
+              url = "https://portal.korea.ac.kr/front/Main.kpd?language=ko";
+            }
+            {
+              name = "KT";
+              tags = ["kt"];
+              keyword = "kt";
+              url = "https://dlspace.kt.co.kr/summary";
+            }
+          ];
+        }
+      ];
 
       search = {
         force = true;

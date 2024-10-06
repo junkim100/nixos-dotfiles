@@ -32,7 +32,6 @@
 
     # GUI
     thunderbird
-    cider
     gnome-tweaks
     zoom-us
 
