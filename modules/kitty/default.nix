@@ -38,9 +38,9 @@
       active_border_color = "${color-palette.nord14}";
       inactive_border_color = "${color-palette.nord4}";
       inactive_text_alpha = "0.8";
-      hide_window_decorations = false;
+      hide_window_decorations = true;
       confirm_os_window_close = 0;
-      tab_bar_edge = "bottom";
+      tab_bar_edge = "top";
       tab_bar_margin_width = 1;
       tab_bar_margin_height = "0.0 10.0";
       tab_bar_style = "powerline";
