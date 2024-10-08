@@ -9,6 +9,7 @@
     # GUI
     ./kitty
     ./firefox
+    ./thunderbird
     ./Code
     ./zathura
 

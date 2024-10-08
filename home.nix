@@ -31,7 +31,6 @@
     python310
 
     # GUI
-    thunderbird
     gnome-tweaks
     zoom-us
 
