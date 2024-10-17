@@ -215,6 +215,24 @@ in {
               keyword = "kt";
               url = "https://dlspace.kt.co.kr/summary";
             }
+            {
+              name = "NixOS & Flakes Book";
+              tags = ["nix"];
+              keyword = "nixos book";
+              url = "https://nixos-and-flakes.thiscute.world/";
+            }
+            # {
+            #   name = "NixOS Options";
+            #   tags = ["nix"];
+            #   keyword = "nixos options";
+            #   url = "https://search.nixos.org/options";
+            # }
+            # {
+            #   name = "NixOS Packages";
+            #   tags = ["nix"];
+            #   keyword = "nixos packages";
+            #   url = "https://search.nixos.org/packages";
+            # }
           ];
         }
       ];
