@@ -8,6 +8,7 @@
   imports = [
     # GUI
     ./kitty
+    ./rofi
     ./firefox
     ./thunderbird
     ./Code
