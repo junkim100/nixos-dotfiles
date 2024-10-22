@@ -44,6 +44,7 @@ in {
         ublock-origin
         tree-style-tab
         darkreader
+        read-aloud
       ];
 
       # Hide tab bar because we have tree style tabs

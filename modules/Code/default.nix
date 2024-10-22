@@ -43,6 +43,7 @@
       "python.linting.pylintEnabled" = false;
       "jupyter.alwaysTrustNotebooks" = true;
       "workbench.colorTheme" = "Nord";
+      "jupyter.askForKernelRestart" = false;
     };
   };
 }
