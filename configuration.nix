@@ -99,6 +99,38 @@
 
   home-manager.backupFileExtension = "backup";
 
+  environment.gnome.excludePackages =
+    (with pkgs; [
+      gnome-photos
+      gnome-tour
+      gnome-text-editor
+      gnome-console
+      gnome-connections
+      snapshot
+      loupe
+    ])
+    ++ (with pkgs.gnome; [
+      gnome-music
+      gnome-maps
+      gnome-contacts
+      gnome-weather
+      gnome-clocks
+      gnome-calculator
+      gnome-calendar
+      gnome-logs
+      gnome-font-viewer
+      simple-scan
+      yelp
+      seahorse
+      epiphany # web browser
+      geary # email reader
+      evince # document viewer
+      gnome-characters
+      totem # video player
+    ]);
+
+  services.xserver.excludePackages = [pkgs.xterm];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
