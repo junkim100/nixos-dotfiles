@@ -34,6 +34,7 @@
     gnome-tweaks
     zoom-us
     slack
+    cider
 
     # Wine
     wine
