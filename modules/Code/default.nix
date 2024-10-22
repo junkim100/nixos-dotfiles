@@ -44,6 +44,7 @@
       "jupyter.alwaysTrustNotebooks" = true;
       "workbench.colorTheme" = "Nord";
       "jupyter.askForKernelRestart" = false;
+      "terminal.integrated.enableMultiLinePasteWarning" = false;
     };
   };
 }
