@@ -33,6 +33,7 @@
     # GUI
     gnome-tweaks
     zoom-us
+    slack
 
     # Wine
     wine
