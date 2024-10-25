@@ -45,6 +45,7 @@
       "workbench.colorTheme" = "Nord";
       "jupyter.askForKernelRestart" = false;
       "terminal.integrated.enableMultiLinePasteWarning" = false;
+      "editor.minimap.showSlider" = "always";
     };
   };
 }
