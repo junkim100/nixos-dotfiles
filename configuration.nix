@@ -106,10 +106,6 @@
       gnome-text-editor
       gnome-console
       gnome-connections
-      snapshot
-      loupe
-    ])
-    ++ (with pkgs.gnome; [
       gnome-music
       gnome-maps
       gnome-contacts
@@ -127,6 +123,8 @@
       evince # document viewer
       gnome-characters
       totem # video player
+      snapshot
+      loupe
     ]);
 
   services.xserver.excludePackages = [pkgs.xterm];

@@ -214,7 +214,7 @@ in {
               name = "KT";
               tags = ["kt"];
               keyword = "kt";
-              url = "https://dlspace.kt.co.kr/summary";
+              url = "https://earth.kt.co.kr/";
             }
             {
               name = "NixOS & Flakes Book";
