@@ -36,6 +36,7 @@
     slack
     cider
     vlc
+    todoist-electron
 
     # Wine
     wine
