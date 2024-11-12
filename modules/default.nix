@@ -19,5 +19,6 @@
     ./bat
     ./zsh
     ./starship
+    ./logiops
   ];
 }

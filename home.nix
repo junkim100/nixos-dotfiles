@@ -35,6 +35,7 @@
     zoom-us
     slack
     cider
+    vlc
 
     # Wine
     wine

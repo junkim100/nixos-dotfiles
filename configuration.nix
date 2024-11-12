@@ -61,6 +61,17 @@
     variant = "";
   };
 
+  systemd.services.logid = {
+    description = "Logitech Configuration Daemon";
+    wantedBy = ["multi-user.target"];
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = "${pkgs.logiops}/bin/logid";
+      ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
+      Restart = "on-failure";
+    };
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -99,33 +110,32 @@
 
   home-manager.backupFileExtension = "backup";
 
-  environment.gnome.excludePackages =
-    (with pkgs; [
-      gnome-photos
-      gnome-tour
-      gnome-text-editor
-      gnome-console
-      gnome-connections
-      gnome-music
-      gnome-maps
-      gnome-contacts
-      gnome-weather
-      gnome-clocks
-      gnome-calculator
-      gnome-calendar
-      gnome-logs
-      gnome-font-viewer
-      simple-scan
-      yelp
-      seahorse
-      epiphany # web browser
-      geary # email reader
-      evince # document viewer
-      gnome-characters
-      totem # video player
-      snapshot
-      loupe
-    ]);
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-photos
+    gnome-tour
+    gnome-text-editor
+    gnome-console
+    gnome-connections
+    gnome-music
+    gnome-maps
+    gnome-contacts
+    gnome-weather
+    gnome-clocks
+    gnome-calculator
+    gnome-calendar
+    gnome-logs
+    gnome-font-viewer
+    simple-scan
+    yelp
+    seahorse
+    epiphany # web browser
+    geary # email reader
+    evince # document viewer
+    gnome-characters
+    totem # video player
+    snapshot
+    loupe
+  ];
 
   services.xserver.excludePackages = [pkgs.xterm];
 
