@@ -14,7 +14,7 @@
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Control>space";
-      command = "${pkgs.rofi}/bin/rofi -show drun";
+      command = "${pkgs.rofi}/bin/rofi -normal-window -steal-focus -show drun";
       name = "Rofi";
     };
   };
