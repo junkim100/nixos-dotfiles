@@ -47,6 +47,10 @@
       "notebook.lineNumbers" = "on";
       "terminal.integrated.enableMultiLinePasteWarning" = false;
       "editor.minimap.showSlider" = "always";
+      "editor.defaultFormatter" = "ms-python.black-formatter";
+      "[json]" = {
+        "editor.defaultFormatter" = "vscode.json-language-features";
+      };
     };
   };
 }

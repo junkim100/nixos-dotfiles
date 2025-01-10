@@ -108,6 +108,40 @@
     git
   ];
 
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc
+      zlib
+      openssl
+      curl
+      glib
+      gtk3
+      pango
+      cairo
+      atk
+      gdk-pixbuf
+      at-spi2-atk
+      dbus
+      nss
+      nspr
+      cups
+      alsa-lib
+      libxkbcommon
+      libdrm
+      mesa
+      libGL
+      xorg.libX11
+      xorg.libXcomposite
+      xorg.libXdamage
+      xorg.libXext
+      xorg.libXfixes
+      xorg.libXrandr
+      xorg.libxcb
+      expat
+    ];
+  };
+
   home-manager.backupFileExtension = "backup";
 
   environment.gnome.excludePackages = with pkgs; [
